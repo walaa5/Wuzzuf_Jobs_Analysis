@@ -1,0 +1,34 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style_template.css">
+    <title>home page</title>
+</head>
+<body>
+<!-- project -->
+    <h2>
+        <a href="http://localhost:8080/">Wuzzuf Jobs Analysis</a>
+    </h2>
+    <div class="tab">
+        <button class="tablinks" onclick="location.href='http://localhost:8080/View_Dataset'">View Dataset</button>
+        <button class="tablinks" onclick="location.href='http://localhost:8080/Dataset_Structure'">Dataset Structure</button>
+        <button class="tablinks" onclick="location.href='http://localhost:8080/Dataset_Summary'">Dataset Summary</button>
+        <button class="tablinks" onclick="location.href='http://localhost:8080/Clean_Dataset'">Clean Dataset</button>
+        <button class="tablinks" onclick="location.href='http://localhost:8080/Most_Demanding_Companies'">Most Demanding Companies</button>
+        <button class="tablinks" onclick="location.href='http://localhost:8080/Most_Demanding_Companies_Pie_Chart'">Most Demanding Companies Pie Chart</button>
+        <button class="tablinks" onclick="location.href='http://localhost:8080/Most_Popular_Job_Titles'">Most Popular Job Titles</button>
+        <button class="tablinks" onclick="location.href='http://localhost:8080/Most_Popular_Job_Titles_Bar_Chart'">Most Popular Job Titles Bar Chart</button>
+        <button class="tablinks" onclick="location.href='http://localhost:8080/Most_Popular_Areas'">Most Popular Areas</button>
+        <button class="tablinks" onclick="location.href='http://localhost:8080/Most_Popular_Areas_Bar_Chart'">Most Popular Areas Bar Chart</button>
+        <button class="tablinks" onclick="location.href='http://localhost:8080/Most_Demanded_Skills'">Most Demanded Skills</button>
+        <button class="tablinks" onclick="location.href='http://localhost:8080/Factorize_YearsExp'">Factorize Years of Experience</button>
+    </div>
+
+    <div class="w3-container w3-center" style="overflow-x: scroll" th:utext="${body}">
+    </div>
+
+</body>
+</html>
